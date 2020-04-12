@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+$orange: #EDBD6B;
+$lite-blue: #BFE5EE;
+$dark-blue: #04082E;
+$green: #2A7C75;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $lite-blue;
+
+    #main-ph {
+        width: 30%;
+        margin:  30px 5%;
+        box-sizing: border-box;
+        box-shadow: 0 0 30px  $orange;
+        border-radius: 6px;
+    }
+
+    #main-block {
+        display: inline-block;
+        width: 40%;
+        float: right;
+        margin-right: 10%;
+        margin-top: 3%;
+        text-align: center;
+
+        h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: $dark-blue;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 32px;
+            padding: 16px 32px;
+            margin: 20px 40px;
+            border: 2px solid $orange;
+            border-radius: 16px;
+            color: $green;
+            box-shadow: 2px 2px 6px $green;
+            transition: 1.5s;
+            &:hover {
+                background-color: #EBFFFF;
+            }
+        }
+
+        #links {
+            display: inline-block;
+            margin-top: 30px;
+        }
+    }
+
+    #awards {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 20px;
+        background-color: #EBFFFF;
+        color: $lite-blue;
+    }
+
+    #comments {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 20px;
+        color: #EBFFFF;
+        background-color: $lite-blue;
+
+    }
+}
