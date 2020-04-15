@@ -24,7 +24,7 @@ function mymenu(){
 	add_theme_support('title-tag'); //  делаем автоматическуб генерацию титлов на всех страницах
 	add_theme_support( 'post-thumbnails', array( 'post' ) ); // дает возможность пихать превью пики к постам!!
 	add_image_size( 'post_thumb', 1300, 500, true); // регистрирует новый размер картинок!
-	add_image_size( 'main_pic_size', 1300, 500, true); // регистрирует новый размер картинок!
+	add_image_size( 'main_pic_size', 1000, 655, true); // регистрирует новый размер картинок!
 	add_image_size( 'post_full', 1920, 1080, true); // регистрирует новый размер картинок!
 	add_filter( 'excerpt_more', 'new_excerpt_more' );////  регистрируем фильтр для красивого отображения в постах кнопки читать дальше
 	add_filter( 'document_title_separator', 'filter_title' );//регаю фильтр для изменения вывода тайтла на страницах

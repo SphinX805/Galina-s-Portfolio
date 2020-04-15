@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 $orange: #EDBD6B;
-$lite-blue: #BFE5EE;
-$dark-blue: #04082E;
-$green: #2A7C75;
+$lite-blue: rgb(197, 238, 247);
+$dark-blue: rgb(5, 13, 80);
+$green: rgb(28, 105, 99);
 
 body {
     margin: 0;
@@ -51,15 +51,28 @@ body {
             border-radius: 16px;
             color: $green;
             box-shadow: 2px 2px 6px $green;
-            transition: 1.5s;
+            transition: 0.6s;
             &:hover {
                 background-color: #EBFFFF;
+                box-shadow: 0 0 20px $orange;
             }
         }
 
         #links {
             display: inline-block;
             margin-top: 30px;
+
+            a {
+             display: inline-block;
+             width: 50px;
+             height: 50px;
+             margin: 0 20px;
+             
+                img {
+                    display: inline-block;
+                    max-width: 100%;
+                }
+            }
         }
     }
 
@@ -67,12 +80,20 @@ body {
         display: inline-block;
         box-sizing: border-box;
         width: 100%;
-        height: 200px;
         text-align: center;
         font-size: 40px;
         padding-top: 20px;
-        background-color: #EBFFFF;
-        color: $lite-blue;
+        margin-bottom: 160px;
+        background-color: $lite-blue;
+        color: $dark-blue;
+
+        img {
+            display: inline-block;
+            cursor: pointer;
+            width: 350px;
+            margin: 0 15px;
+            border-radius: 8px;
+        }
     }
 
     #comments {
@@ -83,7 +104,7 @@ body {
         text-align: center;
         font-size: 40px;
         padding-top: 20px;
-        color: #EBFFFF;
+        color: $dark-blue;
         background-color: $lite-blue;
 
     }

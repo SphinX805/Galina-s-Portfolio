@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <body>
                 <?php
              $posts = get_posts( array(
@@ -77,16 +78,25 @@ wp_reset_postdata(); // сброс
 ?>
         </section>
 
+        
+
+
         <section id="links">
-            inst yt tiktok mail
+            <a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/icons/inst.svg"></a>
+            <a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/icons/youtube.svg"></a>
+            <a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/icons/tiktok.svg"></a>
+            <a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/icons/mail.svg"></a>
         </section>
     </div>
 
     <div id="awards">
-        Достижения
+        <h3>Достижения</h3>
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/aw2.jpg">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/aw3.jpg">
     </div>
 
     <div id="comments">
-        Отзывы
+        <h4>Отзывы</h4>
     </div>
 <?php get_footer(); ?>
