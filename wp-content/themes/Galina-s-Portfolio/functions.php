@@ -15,7 +15,6 @@ wp_enqueue_style('media-queries', get_template_directory_uri()."/assets/css/medi
 }
 
 function footer_scripts(){
-
 	wp_enqueue_script('script', get_template_directory_uri()."/assets/js/script.js"); // подключаем скрипты (в футер)
 }
 function mymenu(){
