@@ -1,77 +1,232 @@
-/*
-Theme Name: DarkCodersTheme
-*/
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #BFE5EE;
+  background-color: #daf8ff;
 }
-body .wp-post-image {
-  width: 30%;
-  margin: 30px 5%;
-  box-sizing: border-box;
-  box-shadow: 0 0 30px #EDBD6B;
-  border-radius: 6px;
+body .owl-carousel {
+  margin: 20px 0;
+  padding: 10px 0 0 0;
 }
-body #main-block {
+body .owl-carousel .owl-prev, body .owl-carousel .owl-next {
+  display: none;
+}
+body h2 {
+  font-family: "Libre Baskerville", serif;
+}
+body p {
+  font-weight: light;
+  font-family: "Roboto", sans-serif;
+}
+body #main {
   display: inline-block;
-  width: 40%;
-  float: right;
-  margin-right: 10%;
-  margin-top: 3%;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+body #main #main-ph {
+  display: inline-block;
+  width: 330px;
+  height: 500px;
+  border-radius: 8px;
+  margin: 20px;
+  position: relative;
+  left: 5%;
+}
+body #main section {
+  display: inline-block;
+  position: absolute;
+  min-width: 360px;
+  min-height: 500px;
+  right: 25%;
+  margin-top: 25px;
   text-align: center;
-}
-body #main-block h2, body #main-block h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  color: #04082E;
-}
-body #main-block h2 {
-  font-size: 32px;
-}
-body #main-block h3 {
   font-size: 24px;
 }
-body #main-block .button {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 32px;
-  padding: 16px 32px;
-  margin: 20px 40px;
-  border: 2px solid #EDBD6B;
-  border-radius: 16px;
-  color: #2A7C75;
-  box-shadow: 2px 2px 6px #2A7C75;
-  transition: 1.5s;
+body #main #links {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  justify-content: space-evenly;
 }
-body #main-block .button:hover {
-  background-color: #EBFFFF;
-}
-body #main-block #links {
+body #main #links a {
   display: inline-block;
-  margin-top: 30px;
+}
+body #main #links img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+body #main ul {
+  margin-top: 60px;
+  display: inline-block;
+  list-style-type: none;
+}
+body #main ul li {
+  display: block;
+  margin: 15px 0;
+  text-align: center;
+}
+body #contButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+body #contButtons span {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ffbe4f;
+  border-radius: 8px;
+  color: #030d6d;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body #contButtons span:hover {
+  box-shadow: 0 0 15px #67ccc4;
+}
+body #showContent {
+  display: inline-block;
+  width: 90%;
+  margin-left: 5%;
+  padding: 0;
+}
+body #showContent div {
+  display: none;
+}
+body #showContent .active {
+  display: inline-block;
+}
+body #showContent h2 {
+  margin: 8px 0 8px 30px;
+}
+body #showContent p {
+  display: inline-block;
+  text-align: center;
 }
 body #awards {
   display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  font-size: 40px;
-  padding-top: 20px;
-  background-color: #EBFFFF;
-  color: #BFE5EE;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  padding: 0;
 }
-body #comments {
+body #awards h2 {
   display: inline-block;
-  box-sizing: border-box;
   width: 100%;
-  height: 200px;
   text-align: center;
-  font-size: 40px;
-  padding-top: 20px;
-  color: #EBFFFF;
-  background-color: #BFE5EE;
+}
+body #owl1 div {
+  text-align: center;
+}
+body #comm {
+  display: inline-block;
+  width: 90%;
+  margin-left: 5%;
+  padding: 0;
+  overflow: hidden;
+}
+body #comm h2 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+body #owl2 div {
+  display: inline-block;
+  position: relative;
+}
+body #owl2 div img {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  position: relative;
+  left: 0;
+  float: left;
+}
+body #owl2 div h2 {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+body #owl2 div p {
+  display: inline-block;
+  margin-top: 10px;
+}
+body footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin: 0;
+  padding: 20px 0;
+  background-color: #212121;
+  color: #656565;
+  font-size: 15px;
+}
+body footer p {
+  text-align: center;
+}
+body footer p span {
+  display: inline-block;
+  margin: 5px 0 0 0;
+}
+body footer a {
+  display: inline-block;
+  color: #656565;
+}
+
+@media screen and (max-width: 1048px) {
+  body #main section {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #main #main-ph {
+    width: 120px;
+    height: 120px;
+    left: calc(50% - 60px);
+    margin: 10px 0 0 0;
+  }
+  body #main section {
+    min-width: 0;
+    min-height: 420px;
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+  body #contButtons span {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+  body #showContent {
+    margin-top: 10px;
+  }
+  body #owl1 div img {
+    width: 90%;
+    left: 5%;
+  }
+  body #owl2 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  body #owl2 div img {
+    width: 70px;
+    height: 70px;
+  }
+  body #owl2 div h2 {
+    font-size: 20px;
+  }
 }
