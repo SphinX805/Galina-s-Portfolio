@@ -149,7 +149,7 @@ body #owl2 div img {
   display: inline-block;
   width: 120px;
   height: 120px;
-  margin: 0;
+  margin: 5px;
   border-radius: 12px;
   position: relative;
   left: 0;
@@ -158,13 +158,13 @@ body #owl2 div img {
 body #owl2 div h2 {
   display: inline-block;
   width: calc(100% - 200px);
-  margin: 10px 20px;
+  margin: 10px 15px;
   vertical-align: top;
   text-align: left;
 }
 body #owl2 div p {
   display: inline-block;
-  margin-top: 10px 5px;
+  margin-top: 10px 0;
 }
 body footer {
   display: flex;
