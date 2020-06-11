@@ -44,6 +44,7 @@ body #main section {
   min-width: 360px;
   min-height: 500px;
   right: 25%;
+  top: 10px;
   margin-top: 25px;
   text-align: center;
   font-size: 24px;
@@ -156,7 +157,7 @@ body #owl2 div img {
 }
 body #owl2 div h2 {
   display: inline-block;
-  width: calc(100% - 140px);
+  width: calc(100% - 200px);
   margin: 10px 20px;
   vertical-align: top;
   text-align: left;
