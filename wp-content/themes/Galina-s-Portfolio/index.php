@@ -1,37 +1,7 @@
 <?php get_header(); ?>
-<?php 
-$is_mobile_device = check_mobile_device();
-if($is_mobile_device){
-    $mobile = True;
-}else{
-    $mobile = False;
-}
-// определение мобильного устройства
-function check_mobile_device() { 
-    $mobile_agent_array = array('ipad', 'iphone', 'android', 'pocket', 'palm', 'windows ce', 'windowsce', 'cellphone', 'opera mobi', 'ipod', 'small', 'sharp', 'sonyericsson', 'symbian', 'opera mini', 'nokia', 'htc_', 'samsung', 'motorola', 'smartphone', 'blackberry', 'playstation portable', 'tablet browser');
-    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);    
-    // var_dump($agent);exit;
-    foreach ($mobile_agent_array as $value) {    
-        if (strpos($agent, $value) !== false) return true;   
-    }       
-    return false; 
-}
-
-?>
 <body>
     <div id="main">
-                        <?php if($mobile){
-             $posts = get_posts( array(
-    'numberposts' => 1,
-    'category'    => get_cat_ID("mobile_pic"),
-    'orderby'     => 'date',
-    'meta_key'    => '',
-    'order'       => 'ASC',
-    'meta_value'  =>'',
-    'post_type'   => 'post',
-    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-) );
-             }else{
+                        <?php
              $posts = get_posts( array(
     'numberposts' => 1,
     'category'    => get_cat_ID("picture"),
@@ -42,13 +12,11 @@ function check_mobile_device() {
     'post_type'   => 'post',
     'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
 ) );
-         }
+         
 foreach( $posts as $post ){
     setup_postdata($post);
     ?>
-    <div id="main-ph">
-            <?php if($mobile){ the_post_thumbnail("mobile_pic"); }else{ the_post_thumbnail("main_pic_size"); } ?>
-        </div>
+    <img id="main-ph">
 <?php
 }
 wp_reset_postdata(); // сброс 

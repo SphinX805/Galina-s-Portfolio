@@ -64,11 +64,11 @@ $("#circle3").animate({
 
 
 if ($(document).width() > '1048') {
-    $("#main-ph").attr('src', './assets/img/big-ph.jpg');
+    $("#main-ph").attr('src', './wp-content/themes/Galina-s-Portfolio/assets/img/big-ph.jpg');
 }
 
 if ($(document).width() <= '1048') {
-    $("#main-ph").attr('src', './assets/img/small-ph.jpg');
+    $("#main-ph").attr('src', './wp-content/themes/Galina-s-Portfolio/assets/img/small-ph.jpg');
 }
 
 $('#btn1').click(function() {
